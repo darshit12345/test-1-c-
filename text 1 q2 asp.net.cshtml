@@ -1,0 +1,111 @@
+// this is darshit's code.......
+
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebControls.aspx.cs"   
+Inherits="WebFormsControlls.WebControls" %>  
+<!DOCTYPE html>  
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head runat="server">  
+<title></title>  
+<style type="text/css">  
+.form1-style {  
+     width: 100%;  
+      }  
+.auto-style2 {  
+     width: 260px;  
+       }  
+.auto-style3 {  
+      width: 260px;  
+      height: 25px;  
+        }  
+.auto-style4 {  
+      height: 25px;  
+        }  
+</style>  
+</head>  
+<body>  
+<form id="form1" runat="server">  
+<div>           
+  <table class="form1-style">  
+    <tr>  
+    <td>  
+    <asp:Label ID="line1" runat="server" Text="student Name"></asp:Label>  
+    </td>  
+    <td>  
+    <asp:TextBox ID="student" runat="server" required="true"></asp:TextBox></td>  
+    </tr>  
+    <tr>  
+    <td>  
+    <asp:Label ID="Line2" runat="server" Text="studentEmail ID"></asp:Label>  
+    </td>  
+    <td>  
+    <asp:TextBox ID="studentEmailID" runat="server" TextMode="Email"></asp:TextBox></td>  
+    </tr>  
+    <tr>  
+    <td>  
+    <asp:Label ID="Line3" runat="server" Text="Password"></asp:Label></td>  
+    <td>  
+    <asp:TextBox ID="TextBox2" runat="server" TextMode="Password"></asp:TextBox></td>  
+    </tr>  
+    <tr>  
+    <td>  
+    <asp:Label ID="line4" runat="server" Text="Confirm Password"></asp:Label></td>  
+    <td>  
+    <asp:TextBox ID="TextBox3" runat="server" TextMode="Password"></asp:TextBox></td>  
+    </tr>  
+    <tr>  
+    <td>  
+    <asp:Label ID="line4" runat="server" Text="Gender"></asp:Label></td>  
+    <td>  
+    <asp:RadioButton ID="RadioButton1" runat="server" GroupName="gender" Text="Male" />  
+    <asp:RadioButton ID="RadioButton2" runat="server" GroupName="gender" Text="Female" /></td>  
+      <asp:RadioButton ID="RadioButton3" runat="server" GroupName="gender" Text="not comfortable" /></td>
+    </tr>  
+    <tr>  
+    <td>  
+    <asp:Label ID="Line5" runat="server" Text="Select Course"></asp:Label></td>  
+    <td>  
+    <asp:CheckBox ID="CheckBox1" runat="server" Text="c#" />  
+    <asp:CheckBox ID="CheckBox2" runat="server" Text="Java" />  
+    <asp:CheckBox ID="CheckBox3" runat="server" Text="sql" />  
+     <asp:CheckBox ID="CheckBox4" runat="server" Text=".net" />  
+    </td>  
+    </tr>  
+    <tr>  
+    <td>  
+    </td>  
+    <td>  
+    <br />  
+    <asp:Button ID="click1" runat="server" Text="Register" CssClass="btn btn-primary" OnClick="click1_Click"/>  
+    </td>  
+    </tr>  
+    </table>  
+    <asp:Label ID="alert" runat="server" Font-Size="Medium" ForeColor="blue"></asp:Label>  
+    </div>  
+    </form>  
+    <table class="auto-style1">  
+    <tr>  
+    <td class="form2-style"><asp:Label ID="ShowstudentNameline1" runat="server" ></asp:Label></td>  
+    <td>  
+    <asp:Label ID="ShowUserName" runat="server" ></asp:Label></td>  
+    </tr>  
+    <tr>  
+    <td class="form2-style"><asp:Label ID="ShowstudentEmailIDline1" runat="server" ></asp:Label></td>  
+    <td>  
+    <asp:Label ID="ShowstudentEmail" runat="server" ></asp:Label></td>  
+    </tr>  
+    <tr>  
+    <td class="form3-style"><asp:Label ID="ShowGenderline1" runat="server" ></asp:Label></td>  
+    <td class="form4-style">  
+    <asp:Label ID="ShowGender" runat="server" ></asp:Label></td>  
+    </tr>  
+    <tr>  
+    <td class="form2-style"><asp:Label ID="ShowCourseLine1" runat="server" ></asp:Label></td>  
+    <td>  
+    <asp:Label ID="ShowCourses" runat="server" ></asp:Label></td>  
+    </tr>  
+     <asp:Label ID="end" runat="server" >"finish...."</asp:Label></td>  
+    </table>  
+</body>  
+</html>  
+
+// end of this code......
